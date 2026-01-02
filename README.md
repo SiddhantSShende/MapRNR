@@ -80,3 +80,4 @@ src/
 
 Proprietary - RNR Consulting
 
+# MapRNR
