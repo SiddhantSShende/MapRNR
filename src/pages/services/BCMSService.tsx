@@ -1,0 +1,971 @@
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { Shield, ArrowRight } from "lucide-react";
+import { PageLayout } from "@/components/layout/PageLayout";
+import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+export default function BCMSService() {
+
+  return (
+    <PageLayout>
+      <section className="py-20 lg:py-28">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-4xl">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Shield className="w-6 h-6 text-primary" />
+              </div>
+              <span className="text-sm font-medium text-primary">Our Services</span>
+            </motion.div>
+            
+            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+              Business Continuity Management System (BCMS) Services
+            </motion.h1>
+            
+            <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-xl text-muted-foreground leading-relaxed">
+              Disruptions can strike anytime — be it cyber-attacks, natural disasters, or system failures. Our BCMS service ensures your organization is ready to respond, recover, and resume operations with minimal downtime.
+            </motion.p>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-20 lg:pb-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-4xl">
+            <h2 className="font-display text-3xl font-bold text-foreground mb-12">Our Approach</h2>
+
+            <div className="space-y-12">
+              {/* BCMS Framework Design & Implementation */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="rounded-2xl bg-muted/30 border border-border/40 p-4 sm:p-6 lg:p-8"
+              >
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-4 sm:mb-6">
+                  BCMS Framework Design &amp; Implementation
+                </h3>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="bcms-policy">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Development of a Business Continuity Policy and Governance Structure
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+A business continuity policy ( BCP ) and governance structure is the foundation of plan to handle disruptions cause by cyberattacks or natural disasters. It sets clear rules and a leadership framework to keep your business on track during a crisis. As a CERT-In empaneled expert, RNR builds a plan that keeps you prepared, so you can focus on your goals without sweating disruptions.
+
+Why It Matters
+A strong policy and governance structure is your crisis playbook, but without it, you’re at risk:
+
+
+
+
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. builds your Business Continuity Management System ( BCMS ) policy with a customized, no-stress approach:
+
+
+
+
+
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes your continuity policy a powerhouse:
+
+
+
+
+<div style={{marginBottom: '1em'}}><strong>What is it?</strong></div>
+<div style={{marginBottom: '1em'}}>A business continuity policy (BCP) and governance structure is the foundation of a plan to handle disruptions caused by cyberattacks or natural disasters. It sets clear rules and a leadership framework to keep your business on track during a crisis. As a CERT-In empaneled expert, RNR builds a plan that keeps you prepared, so you can focus on your goals without sweating disruptions.</div>
+<div style={{marginBottom: '1em'}}><strong>Why It Matters</strong></div>
+<ul style={{marginBottom: '1em', paddingLeft: '1.5em'}}>
+  <li><strong>Crisis Confusion:</strong> During a disruption, if a company doesn’t have clear policy. It will lead to various issues like a data breach, slowing recovery and costing profits.</li>
+  <li><strong>Compliance Absence:</strong> Without a governance framework, you might miss regulations, facing fines or audits for weak preparedness.</li>
+  <li><strong>Workflow Wobbles:</strong> Unclear leadership can delay decisions, stalling services and frustrating clients during a crisis.</li>
+  <li><strong>Brand Inconsistencies:</strong> A messy crisis response can spark client doubts or negative buzz, dimming your reputation.</li>
+</ul>
+<div style={{marginBottom: '1em'}}><strong>Methodology of RNR</strong></div>
+<ul style={{marginBottom: '1em', paddingLeft: '1.5em'}}>
+  <li><strong>Business Review:</strong> RNR assesses your operations to understand critical needs and risks, shaping a policy that fits your business.</li>
+  <li><strong>Policy Creation:</strong> We design a clear continuity policy outlining crisis response steps, tailored to your industry—healthcare, finance, or tech.</li>
+  <li><strong>Governance Framework:</strong> RNR sets up a leadership structure with defined roles to guide your team through disruptions.</li>
+  <li><strong>Standards Alignment:</strong> We ensure your policy aligns with Rule and Regulations, keeping you compliant without complexity.</li>
+  <li><strong>Continuous Updates:</strong> RNR uses tools like our Eramba GRC platform to monitor and refine your policy as risks evolve.</li>
+</ul>
+<div style={{marginBottom: '1em'}}><strong>Why Choose RNR</strong></div>
+<ul style={{paddingLeft: '1.5em'}}>
+  <li><strong>Tailored Design:</strong> RNR crafts policies that fit your business, from small firms to large enterprises.</li>
+  <li><strong>Solid Planning:</strong> We ensure every policy detail aligns with your needs and ISO 22301 standards.</li>
+  <li><strong>Smart Tools:</strong> RNR’s Eramba GRC platform keeps your governance current with real-time insights.</li>
+  <li><strong>Future-Proof Support:</strong> As risks shift, RNR keeps your policy sharp, ensuring crisis readiness.</li>
+</ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="bcms-critical-functions">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Identification of Critical Business Functions and Dependencies
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                      What is it?
+Identifying critical business functions and dependencies means mapping the processes and resources—like IT systems, vendors, or teams—that keep your business alive, so you know what to shield during a crisis. At RNR Consulting Pvt. Ltd., we pinpoint these key elements to ensure your operations stay strong. We helps you protect what matters most, keeping your business humming no matter the challenge.
+
+Why It Matters
+Knowing your critical functions is your continuity lifeline, but missing them can lead to trouble:
+
+- Disruption Disasters: Failing to protect key processes, like payment systems, could grind operations to a halt, losing your revenue.
+
+- Compliance Risks: Overlooking dependencies might violate regulations, risking fines or audits for weak continuity plans.
+
+- Service Errors: A critical vendor or system failure can delay deliverables, upsetting clients and hurting business.
+
+- Reputation Setbacks: A disruption hitting key functions can trigger client complaints or bad press, dulling your brand’s shine.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. maps your critical functions with a tailored, no-fuss approach:
+
+- Function Mapping: RNR identifies your core processes, like customer service or logistics, that drive your business.
+
+- Dependency Check: We identify the dependencies of those processes—whether technology, vendors, or personnel—to pinpoint potential weak links.
+
+- Risk Analysis: RNR evaluates risks, like cyber threats or supply issues, to prioritize protection for critical functions.
+
+- Continuity Integration: We integrate findings into a continuity plan aligned with rules and regulations, ensuring the protection of your critical operations.
+
+- Ongoing Updates: RNR uses tools like our Eramba GRC platform to keep your function map fresh as your business grows.
+
+Why choose RNR
+RNR Consulting Pvt. Ltd. makes critical function identification a strength:
+
+- Custom Mapping: RNR tailors plans to your industry, from healthcare to tech.
+
+- Deep Insights: We uncover every dependency to protect your critical processes.
+
+- Smart Tools: RNR’s Eramba GRC platform tracks risks in real-time, keeping priorities clear.
+
+- Future-Ready Support: As your business evolves, RNR keeps your continuity plan robust.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="bcms-roles-escalation">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Establishment of Roles, Responsibilities, and Escalation Procedures
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                      What is it?
+Establishing roles, responsibilities, and escalation procedures means defining who handles what during a crisis—like a cyberattack or outage—so your team can act fast and keep operations running. At RNR Consulting Pvt. Ltd., we set up a clear crisis response structure to ensure your business stays on track. As a CERT-In empaneled expert, RNR helps your team to tackle disruptions, keeping downtime minimal and clients happy.
+
+Why It Matters
+Clear roles and procedures are your crisis GPS, but without them, you’re at risk:
+
+- Response Failures: Unclear roles can lead to confusion during a crisis, slowing recovery and costing revenue.
+
+- Compliance Gaps: Missing defined procedures might violate regulations, risking fines or audits for unpreparedness.
+
+- Operational Hurdles: Without escalation steps, delays in decisions, like restoring systems, can frustrate clients or staff.
+
+- Brand Scratches: A chaotic crisis response can spark client distrust or negative buzz, hurting your reputation.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. builds your crisis response with a customized, no-chaos approach:
+
+- Role Assignment: RNR defines clear roles, from IT leads to crisis coordinators, based on your business needs.
+
+- Responsibility Clarity: We outline tasks, like system recovery or client updates, so everyone knows their role.
+
+- Escalation Plan: RNR creates a step-by-step escalation process to handle crises quickly, from minor glitches to major disruptions.
+
+- Standards Alignment: We ensure procedures meet define standards, keeping you compliant and ready.
+
+- Training & Updates: RNR trains your team and uses tools like our Eramba GRC platform to keep procedures current.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes crisis response a breeze:
+
+- Tailored Plans: RNR sets up roles that fit your business, big or small, in finance, healthcare, or tech.
+
+- Clear Frameworks: We ensure every responsibility and escalation step is sharp and effective.
+
+- Smart Tools: RNR’s Eramba GRC platform keeps procedures updated with real-time insights.
+
+- Always Prepared: As risks evolve, RNR keeps your response plan ready for any crisis.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="bcms-iso22301">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Alignment with ISO 22301 and Sector-Specific Guidelines
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                      What is it?
+Alignment with ISO 22301 and sector-specific guidelines means ensuring your business continuity plan meets the global standard for resilience while fitting your industry’s unique needs, like those in healthcare, finance, or tech. It proves your business can handle disruptions with confidence. At RNR Consulting Pvt. Ltd., we align your continuity plan with ISO 22301 and industry standards. RNR keeps your business compliant and crisis-ready, so you can focus on operations without worrying about breakdowns.
+
+Why It Matters
+ISO 22301 alignment keeps your business resilient, but missing it can lead to problems:
+
+- Crisis Missteps: A misaligned plan could fail during a disruption, like a server crash, causing delays or lost revenue.
+
+- Compliance Trouble: Failure to comply with standards or industry regulations may result in fines or audits due to inadequate continuity plans.
+
+- Operational Setbacks: A poorly aligned plan can slow recovery, like a vendor failure halting services, frustrating clients.
+
+- Reputation Bumps: A weak crisis response can trigger bad press or client doubts, dulling your brand’s trust.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. aligns your BCMS with a tailored, no-drama approach:
+
+- Standards Check: RNR reviews your continuity plan against ISO 22301, spotting gaps to ensure global compliance.
+
+- Industry Customization: We tailor your plan to fit sector-specific needs, ensuring it works for your business.
+
+- Risk Alignment: RNR assesses risks, like cyber threats or supply issues, to align your plan for effective protection.
+
+- Plan Refinement: We sharpen your continuity strategies to meet industry standards, ensuring audit readiness.
+
+- Continuous Monitoring: RNR uses tools like our Eramba GRC platform to track compliance and update your plan as risks evolve.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes ISO 22301 alignment a strength:
+
+- Custom Fit: RNR customizes plans to fit your industry, whether you're a startup or an established enterprise.
+
+- Thorough Checks: We ensure every part of your plan meets ISO 22301 and industry guidelines.
+
+- Smart Tools: RNR’s Eramba GRC platform provides real-time updates and clear insights.
+
+- Future-Ready Support: As standards shift, RNR keeps your plan crisis-ready.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </motion.div>
+
+              {/* Business Impact Analysis (BIA) */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="rounded-2xl bg-muted/30 border border-border/40 p-4 sm:p-6 lg:p-8"
+              >
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-4 sm:mb-6">
+                  Business Impact Analysis (BIA)
+                </h3>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="bia-key-processes">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Identification of Key Business Processes and Interdependencies
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                      What is it?
+Identifying key business processes and interdependencies means pinpointing the operations—like billing or client support—that keep your business ticking, along with their reliance on resources like tech or vendors It serves as the foundation for making your operations crisis-proof.At RNR Consulting Pvt. Ltd., we map these critical pieces to keep your business steady. Our expert team ensures you know exactly what drives your success, so disruptions don’t derail you.
+
+Why It Matters
+Mapping your key processes is your continuity anchor, but missing it can lead to chaos:
+
+- Crisis Crashes: Failing to protect core operations, like order systems, could stop your business cold, bleeding revenue.
+
+- Compliance Trouble: Overlooking dependencies might break regulations and risking.
+
+- Service Breakdowns: A key system or supplier failure can delay deliverables, annoying clients and costing contracts.
+
+- Brand Fluctuations: A disruption hitting critical operations can spark bad press or client gripes, dulling your reputation.
+
+Methodology Of RNR
+RNR Consulting Pvt. Ltd. maps your processes with a tailored, no-mess approach:
+
+- Core Process Mapping: RNR spots your vital operations, like logistics or customer service, that power your business.
+
+- Dependency Dive: We uncover what these processes depend on—IT, vendors, or staff—to find potential weak spots.
+
+- Risk Scan: RNR checks for threats, like cyber hacks or supply chain snags, to prioritize protection.
+
+- Continuity Link: We fold findings into a continuity plan aligned with standards, keeping your operations safe.
+
+- Ongoing Updates: RNR uses tools like our Eramba GRC platform to keep your process map fresh as your business evolves.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes process mapping a superpower:
+
+- Custom Plans: RNR tailors mappings to your industry, from tech to healthcare.
+
+- Deep Insights: We uncover every dependency to shield your core operations.
+
+- Smart Tools: RNR’s Eramba GRC platform tracks risks in real-time, keeping priorities sharp.
+
+- Future-Ready Support: As your business grows, RNR keeps your continuity plan solid.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="bia-impact-estimation">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Estimation of Potential Impact Due to Disruptions
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                      What is it?
+Estimating potential impact due to disruptions means sizing up how a crisis—like a server crash or supply chain glitch—could hit your finances, operations, or reputation. It’s about knowing the stakes to plan smart recovery. At RNR Consulting Pvt. Ltd., we crunch the numbers to keep your business prepared. As a CERT-In empaneled expert, RNR helps you see the full picture of disruption risks, so you can stay focused on your goals without worrying about setbacks.
+
+Methodology of RNR
+Understanding disruption impacts is your crisis shield, but ignoring them can lead to trouble:
+
+- Revenue Dips: A crisis, like a system outage, could slash profits or pile on recovery costs, hitting your bottom line.
+
+- Compliance Issues: Missing impact assessments might violate regulations, risking fines or audits for poor planning.
+
+- Workflow obstacles: A disruption halting operations, like delivery delays, can frustrate clients and stall projects.
+
+- Reputation disruption: A mishandled crisis can fuel client complaints or bad buzz, dimming your brand’s trust.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes impact estimation a strength:
+
+- Custom Insights: RNR tailors assessments to your industry, from finance to healthcare.
+
+- Thorough Breakdowns: We cover every financial, operational, and reputational risk.
+
+- Smart Tools: RNR’s Eramba GRC platform delivers real-time updates and clear reports.
+
+- Future-Ready Support: As risks evolve, RNR keeps your estimates on point.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="bia-rto-rpo">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Definition of Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                      What is it?
+Defining Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) means setting targets for how fast your business needs to recover key operations (RTO) and how much data loss you can handle (RPO) during a crisis, like a cyberattack or outage. It’s your recovery blueprint. At RNR Consulting Pvt. Ltd., we craft these targets to ensure quick, effective recovery. Our team helps you bounce back fast, keeping your operations and clients on track.
+
+Why It Matters
+RTO and RPO are your crisis compass, but without them, you’re vulnerable:
+
+- Downtime Costs: Vague recovery targets could prolong outages, like a billing system crash, draining revenue.
+
+- Compliance Risks: Missing RTO/RPO might violate regulations, risking fines or audits for weak continuity plans.
+
+- Service Slowdowns: Unclear targets can delay recovery, stalling client services and causing frustration.
+
+- Reputation Bumps: Slow or partial recovery can spark client distrust or negative press, hurting your brand.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. sets RTO and RPO with a tailored approach:
+
+- Process Prioritization: RNR identifies key operations, like IT or customer support, to set focused recovery targets.
+
+- RTO Definition: We calculate how quickly each operation must recover to minimize downtime, based on your needs.
+
+- RPO Definition: RNR determines acceptable data loss for each process, ensuring minimal impact.
+
+- Standards Alignment: We align targets with industry standards, keeping your plan compliant and effective.
+
+- Ongoing Refinement: RNR uses tools like our Eramba GRC platform to update targets as your business evolves.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes RTO and RPO a recovery win:
+
+- Custom Targets: RNR sets recovery goals tailored to your industry, from tech to healthcare.
+
+- Precise Planning: We help you achieve targets that reduce downtime and prevent data loss.
+
+- Smart Tools: RNR’s Eramba GRC platform keeps targets fresh with real-time insights.
+
+- Future-Ready Support: As operations change, RNR keeps your recovery plan sharp.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </motion.div>
+
+              {/* Risk Assessment & Strategy Development */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="rounded-2xl bg-muted/30 border border-border/40 p-4 sm:p-6 lg:p-8"
+              >
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-4 sm:mb-6">
+                  Risk Assessment &amp; Strategy Development
+                </h3>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="risk-threat-vulnerability">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Threat and Vulnerability Assessment
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                     What is it?
+A threat and vulnerability assessment identifies risks—like cyberattacks, natural disasters, or system failures—that could disrupt your business, pinpointing weak spots in your operations. It’s the first step to building a rock-solid continuity plan. At RNR Consulting Pvt. Ltd., we uncover these risks to keep your business prepared. Our expert team digs deep to spot threats, ensuring your operations stay strong no matter what comes your way.
+
+Why It Matters
+Assessing threats and vulnerabilities is your crisis radar, but skipping it can lead to trouble:
+
+- Disruption Hits: Unidentified threats, like ransomware, could shut down operations, costing revenue or clients.
+
+- Compliance Risks: Missing vulnerabilities might violate regulations, risking fines or audits for weak preparedness.
+
+- Workflow obstacles: An unaddressed weak spot, like a vendor issue, can delay services, frustrating customers.
+
+- Reputation Declines: A preventable crisis can spark bad press or client distrust, dulling your brand’s shine.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. tackles threat assessment with a tailored, no-fuss approach:
+
+- Threat Mapping: RNR identifies potential risks, like cyber threats or supply chain failures, that could hit your business.
+
+- Vulnerability Scan: We pinpoint weak spots, like outdated systems or loose processes, that could be exploited.
+
+- Risk Prioritization: RNR ranks threats by impact, focusing on what could hurt your operations most.
+
+- Continuity Integration: We feed findings into a continuity plan aligned with industry standards, ensuring robust protection.
+
+- Ongoing Monitoring: RNR tracks risks and maintains your assessment up to date with the help of solutions like our Eramba GRC platform.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes threat assessment a strength:
+
+- Custom Risk Maps: RNR tailors assessments to your industry, from healthcare to tech.
+
+- Deep Analysis: We uncover every threat and vulnerability to keep your operations safe.
+
+- Smart Tools: RNR’s Eramba GRC platform provides real-time risk updates and clear insights.
+
+- Future-Ready Support: As threats evolve, RNR keeps your assessment sharp and ready.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="risk-continuity-strategy">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Continuity and Recovery Strategy Formulation (People, Process, Technology)
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                      What is it?
+Continuity and recovery strategy formulation means building a plan to keep your business running during a crisis by focusing on people (your team), processes (your operations), and technology (your systems). It’s your blueprint for bouncing back fast. We craft a strategy that covers all three to ensure resilience. As a CERT-In empaneled expert, RNR helps you stay operational, keeping clients happy and your business steady.
+
+Methodology of RNR
+A solid continuity strategy is your crisis lifeline, but without it, you’re vulnerable:
+
+- Operational Halts: A weak plan could leave your team or systems down, like a server crash, costing profits.
+
+- Compliance Gaps: Failing to plan for recovery might violate regulations, risking fines or audits.
+
+- Service Slowdowns: Without a strategy, disruptions like vendor failures can delay client deliverables, causing frustration.
+
+- Reputation Bumps: A slow recovery can fuel client complaints or bad buzz, dimming your brand’s trust.
+
+How RNR Gets It Done
+RNR Consulting Pvt. Ltd. builds your strategy with a tailored, no-drama approach:
+
+- People Planning: RNR ensures your team is ready with clear roles and training for crisis response.
+
+- Process Design: We streamline operations, like order fulfillment, to keep them running during disruptions.
+
+- Technology Focus: RNR secures critical systems, like IT infrastructure, to minimize downtime.
+
+- Standards Alignment: We align your strategy with ISO 22301, ensuring compliance and effectiveness.
+
+- Continuous Updates: RNR uses tools like our Eramba GRC platform to refine your strategy as risks evolve.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes continuity planning a win:
+
+- Custom Strategies: RNR tailors plans to your industry, from finance to healthcare.
+
+- Holistic Coverage: We cover people, processes, and tech for full resilience.
+
+- Smart Tools: RNR’s Eramba GRC platform keeps your strategy updated with clear insights.
+
+- Future-Ready Support: As risks change, RNR keeps your plan crisis-ready.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="risk-it-dr-integration">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Integration with IT Disaster Recovery (DR) Plans
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                      What is it?
+Integration with IT Disaster Recovery (DR) plans means syncing your business continuity strategy with IT recovery processes to ensure critical systems—like servers or databases—come back online quickly after a crisis. It’s about keeping your tech backbone strong. At RNR Consulting Pvt. Ltd., we blend your continuity and IT DR plans seamlessly. Our team ensures your systems recover fast, keeping your business steady and clients satisfied.
+
+Why It Matters
+IT DR integration is your tech safety net, but without it, you’re at risk:
+
+- System Downtime: A misaligned DR plan could prolong IT outages, like a database failure, costing revenue.
+
+- Compliance Risks: Failing to integrate DR might violate regulations, risking fines or audits for weak recovery plans.
+
+- Operational Hiccups: Slow system recovery can stall services, like online orders, frustrating clients.
+
+- Reputation Dents: A tech failure with slow recovery can spark bad press or client distrust, hurting your brand.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. integrates DR plans with a tailored, no-hassle approach:
+
+- IT Assessment: RNR reviews your critical systems, like servers or cloud services, to identify recovery needs.
+
+- DR Alignment: We sync your IT DR plan with your continuity strategy, ensuring seamless recovery.
+
+- Recovery Testing: RNR tests DR processes to confirm they work under crisis conditions, like cyberattacks.
+
+- Standards Alignment: We ensure integration meets ISO 22301, keeping your plan compliant.
+
+- Ongoing Updates: RNR uses tools like our Eramba GRC platform to keep DR plans current as tech evolves.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes IT DR integration a strength:
+
+- Custom Sync: RNR tailors integration to your industry, from tech to healthcare.
+
+- Thorough Planning: We ensure IT and continuity plans work as one.
+
+- Smart Tools: RNR’s Eramba GRC platform provides real-time updates and clear insights.
+
+- Future-Ready Support: As tech evolves, RNR keeps your DR plan ready.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </motion.div>
+
+              {/* Business Continuity & DR Plan Development */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="rounded-2xl bg-muted/30 border border-border/40 p-4 sm:p-6 lg:p-8"
+              >
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-4 sm:mb-6">
+                  Business Continuity &amp; DR Plan Development
+                </h3>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="dr-drafting-customizing">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Drafting and Customizing BC &amp; DR Plans per Business Unit
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                      What is it?
+Drafting and customizing Business Continuity (BC) and Disaster Recovery (DR) plans per business unit means creating tailored strategies for each part of your organization—like sales, IT, or operations—to ensure they stay functional during crises like cyberattacks or outages. At RNR, we build plans that fit each unit’s unique needs. Our team ensures your business stays resilient, keeping every department ready to roll no matter what hits.
+
+Why It Matters
+Custom BC & DR plans are your crisis blueprint, but without them, you’re exposed to:
+
+- Unit Shutdowns: A generic plan could fail key departments, like IT, halting operations and draining revenue.
+
+- Compliance Risks: Missing tailored plans might violate regulations, risking fines or audits for weak preparedness.
+
+- Workflow Chaos: A crisis hitting an unprepared unit, like logistics, can delay services and frustrate clients.
+
+- Reputation Scuffs: A department’s failure can spark client complaints or bad press, dimming your brand’s trust.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. crafts BC & DR plans with a tailored, no-hassle approach:
+
+- Unit Assessment: RNR reviews each business unit’s operations, like finance or customer support, to understand their needs.
+
+- Custom Plan Drafting: We create specific BC & DR plans for each unit, addressing unique risks like system failures or supply issues.
+
+- Recovery Focus: RNR ensures plans prioritize quick recovery for critical functions, tailored to each department.
+
+- Standards Alignment: We align plans with ISO 22301, ensuring compliance and effectiveness.
+
+- Ongoing Updates: RNR uses tools like our Eramba GRC platform to keep plans current as units evolve.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes unit-specific plans a strength:
+
+- Custom Fit: RNR tailors plans to each business unit, from startups to enterprises.
+
+- Deep Planning: We ensure every department’s plan covers its unique risks.
+
+- Smart Tools: RNR’s Eramba GRC platform provides real-time updates and clear insights.
+
+- Future-Ready Support: As your business grows, RNR keeps plans sharp and ready.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="dr-recovery-procedures">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Documentation of Recovery Procedures, Communication Protocols, and Fallback Operations
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                     What is it?
+Documenting recovery procedures, communication protocols, and fallback operations means creating clear, step-by-step guides for restoring systems, coordinating teams, and switching to backup processes during a crisis, like a server crash or power outage. At RNR Consulting Pvt. Ltd., we write these playbooks to keep your business running smoothly. As a CERT-In empaneled expert, RNR ensures your team knows exactly what to do, minimizing downtime and keeping clients happy.
+
+Why It Matters
+Clear documentation is your crisis GPS, but without it, you’re at risk:
+
+- Recovery Delays: Missing procedures could slow system restoration, costing revenue or clients.
+
+- Compliance Gaps: Lack of documented plans might violate regulations, risking fines or audits.
+
+- Team Confusion: Without communication protocols, a crisis can lead to chaos, delaying services and frustrating customers.
+
+- Reputation Dings: A sloppy crisis response can fuel bad buzz or client distrust, hurting your brand.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. creates documentation with a tailored, no-chaos approach:
+
+- Recovery Procedures: RNR writes clear steps for restoring critical systems, like databases or networks, to minimize downtime.
+
+- Communication Protocols: We define who communicates what, ensuring teams and clients stay informed during a crisis.
+
+- Fallback Operations: RNR documents backup processes, like manual workflows, to keep operations running.
+
+- Standards Alignment: We ensure documentation meets ISO 22301, keeping your plans compliant.
+
+- Ongoing Updates: RNR uses tools like our Eramba GRC platform to keep documentation current as risks evolve.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes documentation a crisis win:
+
+- Custom Guides: RNR tailors documentation to your industry, from healthcare to tech.
+
+- Clear Playbooks: We ensure every step is easy to follow and effective.
+
+- Smart Tools: RNR’s Eramba GRC platform keeps documentation updated with real-time insights.
+
+- Future-Ready Support: As risks change, RNR keeps your plans ready.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="dr-emergency-response">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Creation of Emergency Response and Crisis Management Plans
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line">
+                    What is it?
+Creating emergency response and crisis management plans means building strategies to handle urgent situations—like natural disasters or cyberattacks—with clear actions to protect your people, operations, and reputation. We develop plans to keep your business steady during chaos. Our team ensures you’re ready to act fast, minimizing damage and keeping your clients confident.
+
+Why It Matters
+Emergency and crisis plans are your crisis lifeline, but without them, you’re vulnerable:
+
+- Response Fumbles: No plan could lead to chaos during a crisis, like a data breach, costing revenue or trust.
+
+- Compliance Risks: Missing crisis plans might violate regulations, risking fines or audits for poor preparedness.
+
+- Operational Hiccups: A weak response can delay recovery, stalling services and frustrating clients.
+
+- Reputation Bumps: A mishandled crisis can spark bad press or client doubts, dimming your brand’s glow.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. builds crisis plans with a tailored, no-panic approach:
+
+- Emergency Response Planning: RNR creates steps to protect people and assets, like evacuation or system lockdowns, during crises.
+
+- Crisis Management Strategy: We develop plans for coordinating teams, managing stakeholders, and minimizing damage.
+
+- Risk Focus: RNR tailors plans to address specific threats, like floods or ransomware, based on your business.
+
+- Standards Alignment: We ensure plans meet ISO 22301, keeping you compliant and effective.
+
+- Ongoing Updates: RNR uses tools like our Eramba GRC platform to keep plans current as risks evolve.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes crisis planning a strength:
+
+- Custom Plans: RNR tailors response strategies to your industry, from finance to healthcare.
+
+- Thorough Strategies: We cover every crisis scenario for full preparedness.
+
+- Smart Tools: RNR’s Eramba GRC platform provides real-time updates and clear insights.
+
+- Future-Ready Support: As risks shift, RNR keeps your plans crisis-ready.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </motion.div>
+
+              {/* BC/DR Testing & Drills */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="rounded-2xl bg-muted/30 border border-border/40 p-4 sm:p-6 lg:p-8"
+              >
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-4 sm:mb-6">
+                  BC/DR Testing &amp; Drills
+                </h3>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="testing-simulations">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Tabletop Exercises, Walk-Throughs, and Full-Scale Simulations
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground">
+                      What is it?
+Tabletop exercises, walk-throughs, and full-scale simulations are hands-on tests of your business continuity and disaster recovery (BC/DR) plans, from discussion-based scenarios to real-world drills, ensuring your team is ready for crises like cyberattacks or outages. At RNR Consulting Pvt. Ltd., we run these exercises to sharpen your response. Our team makes sure your plans work under pressure, keeping your business steady and clients confident.
+
+Why It Matters
+Testing through exercises is your crisis rehearsal, but skipping it can leave you exposed:
+
+- Response Fumbles: Untested plans could fail during a real crisis, like a server crash, causing delays and lost revenue.
+
+- Compliance Risks: Failing to test might violate regulations, risking fines or audits for weak preparedness.
+
+- Operational Snags: Unpracticed teams might stumble, delaying recovery and frustrating clients.
+
+- Reputation Dents: A weak crisis response can spark bad press or client distrust, dimming your brand’s shine.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. runs exercises with a tailored, no-stress approach:
+
+- Tabletop Exercises: RNR facilitates discussion-based scenarios to test decision-making in a low-pressure setting.
+
+- Walk-Throughs: We guide teams through step-by-step plan reviews to ensure clarity and readiness.
+
+- Full-Scale Simulations: RNR conducts real-world drills, like system failover tests, to mimic actual crises.
+
+- Standards Alignment: We ensure exercises meet ISO 22301, keeping your plans compliant.
+
+- Continuous Improvement: RNR uses tools like our Eramba GRC platform to track results and refine plans.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes testing a strength:
+
+- Custom Drills: RNR tailors exercises to your industry, from healthcare to tech.
+
+- Thorough Testing: We cover every scenario to ensure your plans hold up.
+
+- Smart Tools: RNR’s Eramba GRC platform provides real-time insights and clear reports.
+
+- Future-Ready Support: As risks evolve, RNR keeps your plans sharp through regular testing.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="testing-failover">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Testing of Alternate Site Operations and Failover Capabilities
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground">
+                     What is it?
+Testing alternate site operations and failover capabilities means verifying that your backup locations and systems—like secondary offices or cloud servers—can take over during a crisis, such as a data center failure. We ensure these backups work flawlessly. As a CERT-In empaneled expert, RNR tests your failover systems to keep your business running smoothly, no matter what hits.
+
+Why It Matters
+Testing alternate sites and failover is your crisis safety net, but neglecting it can lead to trouble:
+
+- Downtime Losses: Unproven backups could fail during a crisis, like a site outage, costing revenue or clients.
+
+- Compliance Gaps: Untested failover might violate regulations, risking fines or audits for weak recovery plans.
+
+- Service Hiccups: A faulty alternate site can delay operations, frustrating customers and stalling projects.
+
+- Reputation Bumps: A failed failover can fuel client complaints or bad buzz, hurting your brand’s trust.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. tests failover with a tailored, no-chaos approach:
+
+- Site Assessment: RNR evaluates your alternate sites, like backup offices, to ensure they’re crisis-ready.
+
+- Failover Testing: We simulate system switches, like cloud failovers, to confirm seamless operation.
+
+- Performance Checks: RNR verifies that backup systems meet recovery needs under real-world conditions.
+
+- Standards Alignment: We ensure testing meets ISO 22301, keeping your plan compliant.
+
+- Ongoing Updates: RNR uses tools like our Eramba GRC platform to monitor and refine failover capabilities.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes failover testing a win:
+
+- Custom Tests: RNR tailors testing to your industry, from finance to healthcare.
+
+- Thorough Checks: We ensure every backup site and system is crisis-ready.
+
+- Smart Tools: RNR’s Eramba GRC platform delivers real-time updates and clear insights.
+
+- Future-Ready Support: As tech evolves, RNR keeps your failover plans sharp.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="testing-gaps">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Gap Identification and Improvement Planning Post-Drill
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground">
+                      What is it?
+Gap identification and improvement planning post-drill means analyzing the results of BC/DR tests to spot weaknesses in your plans and creating strategies to fix them, ensuring your business is ready for real crises like cyberattacks or outages. At RNR Consulting Pvt. Ltd., we turn test results into stronger plans. Our team pinpoints gaps, keeping your business resilient and clients confident.
+
+Why It Matters
+Identifying and fixing gaps is your crisis tune-up, but skipping it can leave you vulnerable:
+
+- Response Flops: Unfixed gaps could lead to failures in a real crisis, costing revenue or operations.
+
+- Compliance Risks: Ignoring weaknesses might violate regulations, risking fines or audits for poor preparedness.
+
+- Operational Snags: Unaddressed gaps can delay recovery, stalling services and frustrating clients.
+
+- Reputation Dings: A weak crisis response can spark bad press or client distrust, dulling your brand’s glow.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. finds and fixes gaps with a tailored, no-panic approach:
+
+- Drill Analysis: RNR reviews test results from exercises like tabletop or failover drills to spot weaknesses.
+
+- Gap Identification: We pinpoint issues, like slow response times or unclear roles, that could derail recovery.
+
+- Improvement Planning: RNR creates targeted fixes, like updated procedures or training, to strengthen your plans.
+
+- Standards Alignment: We ensure improvements meet ISO 22301, keeping your plans compliant.
+
+- Ongoing Refinement: RNR uses tools like our Eramba GRC platform to track improvements and keep plans current.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes gap fixing a strength:
+
+- Custom Fixes: RNR tailors improvements to your industry, from tech to healthcare.
+
+- Deep Analysis: We uncover every weakness to ensure robust plans.
+
+- Smart Tools: RNR’s Eramba GRC platform provides real-time insights for ongoing improvement.
+
+- Future-Ready Support: As risks evolve, RNR keeps your plans crisis-ready.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </motion.div>
+
+              {/* Ongoing Monitoring, Maintenance & Awareness */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="rounded-2xl bg-muted/30 border border-border/40 p-4 sm:p-6 lg:p-8"
+              >
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-4 sm:mb-6">
+                  Ongoing Monitoring, Maintenance &amp; Awareness
+                </h3>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="monitoring-audits">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Periodic BCMS Audits and Readiness Assessments
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground">
+What is it?
+Periodic BCMS audits and readiness assessments involve regularly checking your business continuity plans to ensure they’re ready for crises like cyberattacks or outages, spotting any weaknesses before they cause trouble. At RNR Consulting Pvt. Ltd., we keep your plans battle-tested with thorough audits. Our team ensures your business is always prepared, so you can focus on your goals without worrying about disruptions.
+
+Why It Matters
+Regular audits are your continuity checkpoint, but skipping them can leave you vulnerable:
+
+- Crisis Flops: Outdated plans could fail during a disruption, like a system crash, costing revenue or clients.
+
+- Compliance Risks: Unchecked plans might not meet regulations, risking fines or audits for poor preparedness.
+
+- Operational Hiccups: Weaknesses in plans can delay recovery, stalling services and frustrating customers.
+
+- Reputation Dings: A failed crisis response can spark bad press or client distrust, dimming your brand’s shine.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. conducts audits with a tailored, no-fuss approach:
+
+- Plan Review: RNR examines your continuity plans to ensure they cover all critical operations.
+
+- Readiness Checks: We test plan effectiveness, like response times or backup systems, to confirm crisis readiness.
+
+- Weakness Spotting: RNR identifies gaps, like outdated procedures or untested backups, that could derail recovery.
+
+- Actionable Fixes: We provide clear recommendations to strengthen your plans.
+
+- Regular Scheduling: RNR sets up periodic audits to keep your plans current and effective.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes audits a strength:
+
+- Custom Checks: RNR tailors audits to your industry, from healthcare to tech.
+
+- Thorough Reviews: We catch every weakness to keep your plans robust.
+
+- Clear Guidance: RNR delivers practical fixes to boost readiness.
+
+- Future-Ready Support: As risks evolve, RNR keeps your plans crisis-ready.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="monitoring-training">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Training and Awareness Programs for Staff
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground">
+                      What is it?
+Training and awareness programs for staff equip your team with the knowledge and skills to execute business continuity plans during crises, like natural disasters or cyber incidents, ensuring everyone knows their role. We build programs to keep your team sharp. RNR ensures your staff is crisis-ready, keeping operations smooth and clients confident.
+
+Why It Matters
+Training your team is your crisis prep, but without it, you’re at risk:
+
+- Response Chaos: Untrained staff could fumble during a crisis, slowing recovery and costing revenue.
+
+- Compliance Risks: Lack of training might violate regulations, risking fines or audits for poor preparedness.
+
+- Service Delays: Confused teams can stall recovery efforts, frustrating clients and disrupting workflows.
+
+- Reputation Bumps: A sloppy crisis response can fuel client complaints or bad buzz, hurting your brand.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. delivers training with a tailored approach:
+
+- Custom Programs: RNR designs training sessions for your industry, covering roles and crisis scenarios.
+
+- Awareness Building: We educate staff on risks, like data breaches, and their role in continuity plans.
+
+- Hands-On Practice: RNR includes drills or simulations to reinforce skills and confidence.
+
+- Role Clarity: We ensure every team member knows their responsibilities during a crisis.
+
+- Ongoing Sessions: RNR schedules regular training to keep skills fresh and effective.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes training a win:
+
+- Tailored Content: RNR crafts programs for your business, from startups to enterprises.
+
+- Engaging Sessions: We make training practical and easy to grasp.
+
+- Team Readiness: RNR ensures every employee is crisis-prepared.
+
+- Future-Ready Support: As risks change, RNR keeps your training current.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="monitoring-plan-updates">
+                    <AccordionTrigger className="text-sm sm:text-base text-left">
+                      Plan Updates Aligned with Organizational or Regulatory Changes
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm text-muted-foreground">
+                     What is it?
+Plan updates aligned with organizational or regulatory changes mean keeping your business continuity plans current as your business evolves (like new systems or teams) or regulations shift, ensuring readiness for crises like outages or cyberattacks. At RNR, we refresh your plans to stay effective. Our team keeps your continuity strategies up-to-date, so your business stays resilient and clients stay confident.
+
+Why It Matters
+Updating plans is your continuity lifeline, but neglecting it can lead to trouble:
+
+- Outdated Failures: Old plans could fail during a crisis, like a vendor issue, costing revenue or operations.
+
+- Compliance Risks: Unupdated plans might not meet regulations, risking fines or audits.
+
+- Workflow Snags: Plans not matching your current setup can delay recovery, frustrating clients.
+
+- Reputation Dents: A weak crisis response can spark bad press or client distrust, dimming your brand.
+
+Methodology of RNR
+RNR Consulting Pvt. Ltd. updates plans with a tailored, no-hassle approach:
+
+- Change Review: RNR assesses organizational shifts, like new tech or teams, to identify needed updates.
+
+- Regulatory Check: We ensure plans align with current regulations, keeping you compliant.
+
+- Plan Refinement: RNR updates strategies, like recovery steps or roles, to match your business.
+
+- Validation Testing: We test updated plans to confirm they work in crisis scenarios.
+
+- Regular Updates: RNR schedules ongoing reviews to keep plans current and effective.
+
+Why Choose RNR
+RNR Consulting Pvt. Ltd. makes plan updates a strength:
+
+- Custom Updates: RNR tailors changes to your industry, from tech to healthcare.
+
+- Thorough Reviews: We catch every change to keep plans robust.
+
+- Clear Fixes: RNR ensures updates are practical and effective.
+
+- Future-Ready Support: As your business evolves, RNR keeps your plans crisis-ready.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </motion.div>
+            </div>
+
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-12 flex flex-wrap gap-4">
+              <Button size="lg" className="gap-2" asChild><Link to="/contact">Get Started <ArrowRight className="w-4 h-4" /></Link></Button>
+              <Button size="lg" variant="outline" asChild><Link to="/services">View All Services</Link></Button>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+    </PageLayout>
+  );
+}
