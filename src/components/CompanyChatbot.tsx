@@ -106,7 +106,7 @@ export function CompanyChatbot() {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
-  const apiKey = import.meta.env.VITE_OPENROUTER_API_KEY as string | undefined;
+  const chatApiUrl = import.meta.env.VITE_CHAT_API_URL || "http://localhost:3001/api/chat";
 
   useEffect(() => {
     if (messagesEndRef.current) {
@@ -125,36 +125,19 @@ export function CompanyChatbot() {
     setMessages(nextMessages);
     setInput("");
 
-    if (!apiKey) {
-      setMessages((prev) => [
-        ...prev,
-        {
-          id: Date.now() + 1,
-          role: "assistant",
-          content:
-            "Our chat service is temporarily unavailable. Please use the Contact page to reach our team.",
-        },
-      ]);
-      return;
-    }
-
     try {
       setIsLoading(true);
 
-      const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      const response = await fetch(chatApiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
-          model: "openai/gpt-4.1-mini",
           messages: [
             { role: "system", content: SYSTEM_PROMPT },
             ...nextMessages.map((m) => ({ role: m.role, content: m.content })),
           ],
-          temperature: 0.4,
-          max_tokens: 400,
         }),
       });
 
